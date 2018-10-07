@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Pyber Rideshare Data</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-default">
+    <ul class="nav navbar-nav">
+        <li id="home-icon"><a href="Landing.html"><span class="glyphicon glyphicon-dashboard"></span> Pyber</a></li>
+    </ul>
+      <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="pyber_bubble.html">Pyber Data Bubble Plot</a></li>
+          <li><a href="fares_city.html">Fares - City Type</a></li>
+          <li><a href="rides_city.html">Rides - City Type</a></li>
+          <li><a href="drivers_city.html">Drivers - City Type</a></li>
+        </ul>
+      </li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Data<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="data.html">Ride Data</a></li>
+          <li><a href="data2.html">City Data</a></li>
+        </ul>  
+      <li><a href="comparison.html">Comparison</a></li>
+    </ul>
+</nav>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12 col-md-7">
+      <div class="card">
+        <div class="card-header">
+          <h1>Summary: Pyber Rideshare Data</h1>
+        <br>     
+        </div>
+        <div class="card-body">
+          <img class="img-fluid float-left" src="Images/Pyber_Ride_Sharing_Data_2016.png">
+          <p>The purpose of this project was to analyze all of Pyber's historic rideshare data and identify any trends.</p>
+          <p>The data set contains information about every driver, and every historic ride, including details like city, driver count, individual fares, and city type.</p>
+          <p>The first objective is build a bubble plot that showcases the relationship between 4 key variables:
+            <ul>
+              <li>Average Fare ($) Per City</li>
+              <li>Total Number of Rides Per City</li>
+              <li>Total Number of Drivers Per City</li>
+              <li>City Type (Urban, Suburban, Rural</li>
+            </ul></p>
+          <p>The second objective is to build 3 pie charts that demonstrate the following:
+            <ul>
+              <li>% of Total Fares by City Type</li>
+              <li>% of Total Rides by City Type</li>
+              <li>% of Total Drivers by City Type</li>
+            </ul>
+          </p>
+          </div>
+        </div>
+      </div>    
+      <div class="col-sm-12 col-md-5">
+        <div class="card">
+          <div class="card-header">
+            <h2>Visualizations</h2>
+            <br>
+          </div>
+            <div class="card-body">
+              <div class="row">
+                  <div class="col-sm-12 col-6">
+                      <a href="pyber_bubble.html"><img src="Images/Pyber_Ride_Sharing_Data_2016.png" alt="pyber_data"></a>
+                      <a href="fares_city.html"><img src="Images/Total_Fares_City_Type.png" alt="fares_city"></a>
+                      <a href="rides_city.html"><img src="Images/Total_Rides_City_Type.png" alt="rides_city"></a>
+                      <a href="drivers_city.html"><img src="Images/Total_Drivers_City_Type.png" alt="drivers_city"></a>
+                   </div>   
+                  </div>    
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</html>
