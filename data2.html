@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Pyber - City Data</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+    <ul class="nav navbar-nav">
+        <li><a href="Landing.html"><span class="glyphicon glyphicon-dashboard"></span> Pyber</a></li>
+    </ul>
+      <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+            <li><a href="pyber_bubble.html">Pyber Data Bubble Plot</a></li>
+            <li><a href="fares_city.html">Fares - City Type</a></li>
+            <li><a href="rides_city.html">Rides - City Type</a></li>
+            <li><a href="drivers_city.html">Drivers - City Type</a></li>
+        </ul>
+      </li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Data<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="data.html">Ride Data</a></li>
+          <li><a href="data2.html">City Data</a></li>
+        </ul>
+      <li><a href="comparison.html">Comparison</a></li>
+    </ul>
+</nav>
+
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col-sm-12">
+            <div class="card">
+                <div class="card-header">
+                    <h1 class="text-center heading">City Data</h1>
+                </div>
+
+                <div class="card-body">
+                    <p class="text-center">The following table includes all of the data used for constructing the pie charts.</p>
+                    <br>    
+<div class="table-responsive">
+        <table class="table table-bordered table-hover table-condensed table-striped">
+                <thead><tr><th title="Field #1">city</th>
+                <th title="Field #2">driver_count</th>
+                <th title="Field #3">type</th>
+                </tr></thead>
+                <tbody><tr>
+                <td>Richardfort</td>
+                <td align="right">38</td>
+                <td>Urban</td>
+                </tr>
+                <tr>
+                <td>Williamsstad</td>
+                <td align="right">59</td>
+                <td>Urban</td>
+                </tr>
+                <tr>
+                <td>Port Angela</td>
+                <td align="right">67</td>
+                <td>Urban</td>
+                </tr>
+                <tr>
+                <td>Rodneyfort</td>
+                <td align="right">34</td>
+                <td>Urban</td>
+                </tr>
+                <tr>
+                <td>West Robert</td>
+                <td align="right">39</td>
+                <td>Urban</td>
+                </tr>
+                <tr>
+                <td>West Anthony</td>
+                <td align="right">70</td>
+                <td>Urban</td>
+                </tr>
+                <tr>
+                <td>West Angela</td>
+                <td align="right">48</td>
+                <td>Urban</td>
+                </tr>
+                <tr>
+                <td>Martinezhaven</td>
+                <td align="right">25</td>
+                <td>Urban</td>
+                </tr>
+                <tr>
+                <td>Karenberg</td>
+                <td align="right">22</td>
+                <td>Urban</td>
+                </tr>
+                <tr>
+                <td>Barajasview</td>
+                <td align="right">26</td>
+                <td>Urban</td>
+                </tr>
+                <tr>
+                <td>Robertport</td>
+                <td align="right">12</td>
+                <td>Urban</td>
+                </tr>
+                <tr>
+                <td>Joneschester</td>
+                <td align="right">39</td>
+                <td>Urban</td>
+                </tr>
+                <tr>
+                <td>Leahton</td>
+                <td align="right">17</td>
+                <td>Urban</td>
+                </tr>
+                <tr>
+                <td>West Christopherberg</td>
+                <td align="right">32</td>
+                <td>Urban</td>
+                </tr>
+                <tr>
+                <td>Johnton</td>
+                <td align="right">27</td>
+                <td>Urban</td>
+                </tr>
+                <tr>
+                <td>Reynoldsfurt</td>
+                <td align="right">67</td>
+                <td>Urban</td>
+                </tr>
+                <tr>
+                <td>Port David</td>
+                <td align="right">7</td>
+                <td>Urban</td>
+                </tr>
+                <tr>
+                <td>New Kimberlyborough</td>
+                <td align="right">33</td>
+                <td>Urban</td>
+                </tr>
+                <tr>
+                <td>Carriemouth</td>
+                <td align="right">52</td>
+                <td>Urban</td>
+                </tr>
+                <tr>
+                <td>Rogerston</td>
+                <td align="right">25</td>
+                <td>Urban</td>
+                </tr>
+                <tr>
+                <td>Jerryton</td>
+                <td align="right">64</td>
+                <td>Urban</td>
+                </tr>
+                <tr>
+                <td>Loganberg</td>
+                <td align="right">23</td>
+                <td>Urban</td>
+                </tr>
+                <tr>
+                <td>Simpsonburgh</td>
+                <td align="right">21</td>
+                <td>Urban</td>
+                </tr>
+                <tr>
+                <td>Port Frank</td>
+                <td align="right">23</td>
+                <td>Urban</td>
+                </tr>
+                <tr>
+                <td>South Latoya</td>
+                <td align="right">10</td>
+                <td>Urban</td>
+                </tr>
+                <tr>
+                <td>West Samuelburgh</td>
+                <td align="right">73</td>
+                <td>Urban</td>
+                </tr>
+                <tr>
+                <td>Grahamburgh</td>
+                <td align="right">61</td>
+                <td>Urban</td>
+                </tr>
+                <tr>
+                <td>West Patrickchester</td>
+                <td align="right">25</td>
+                <td>Urban</td>
+                </tr>
+                <tr>
+                <td>North Madeline</td>
+                <td align="right">19</td>
+                <td>Urban</td>
+                </tr>
+                <tr>
+                <td>South Jack</td>
+                <td align="right">46</td>
+                <td>Urban</td>
+                </tr>
+                <tr>
+                <td>Liumouth</td>
+                <td align="right">69</td>
+                <td>Urban</td>
+                </tr>
+                <tr>
+                <td>West Ericstad</td>
+                <td align="right">25</td>
+                <td>Urban</td>
+                </tr>
+                <tr>
+                <td>Royland</td>
+                <td align="right">64</td>
+                <td>Urban</td>
+                </tr>
+                <tr>
+                <td>Erikaland</td>
+                <td align="right">37</td>
+                <td>Urban</td>
+                </tr>
+                <tr>
+                <td>Huntermouth</td>
+                <td align="right">37</td>
+                <td>Urban</td>
+                </tr>
+                <tr>
+                <td>Justinberg</td>
+                <td align="right">39</td>
+                <td>Urban</td>
+                </tr>
+                <tr>
+                <td>South Evanton</td>
+                <td align="right">11</td>
+                <td>Urban</td>
+                </tr>
+                <tr>
+                <td>Lake Danielberg</td>
+                <td align="right">19</td>
+                <td>Urban</td>
+                </tr>
+                <tr>
+                <td>East Kaylahaven</td>
+                <td align="right">65</td>
+                <td>Urban</td>
+                </tr>
+                <tr>
+                <td>West Heidi</td>
+                <td align="right">28</td>
+                <td>Urban</td>
+                </tr>
+                <tr>
+                <td>Karenside</td>
+                <td align="right">5</td>
+                <td>Urban</td>
+                </tr>
+                <tr>
+                <td>South Karenland</td>
+                <td align="right">4</td>
+                <td>Urban</td>
+                </tr>
+                <tr>
+                <td>West Gabriel</td>
+                <td align="right">57</td>
+                <td>Urban</td>
+                </tr>
+                <tr>
+                <td>North Markport</td>
+                <td align="right">22</td>
+                <td>Urban</td>
+                </tr>
+                <tr>
+                <td>Raymondhaven</td>
+                <td align="right">11</td>
+                <td>Urban</td>
+                </tr>
+                <tr>
+                <td>North Barbara</td>
+                <td align="right">18</td>
+                <td>Urban</td>
+                </tr>
+                <tr>
+                <td>Lake Scottton</td>
+                <td align="right">58</td>
+                <td>Urban</td>
+                </tr>
+                <tr>
+                <td>West Josephberg</td>
+                <td align="right">45</td>
+                <td>Urban</td>
+                </tr>
+                <tr>
+                <td>Pattyland</td>
+                <td align="right">59</td>
+                <td>Urban</td>
+                </tr>
+                <tr>
+                <td>South Michelleport</td>
+                <td align="right">72</td>
+                <td>Urban</td>
+                </tr>
+                <tr>
+                <td>Christopherfurt</td>
+                <td align="right">41</td>
+                <td>Urban</td>
+                </tr>
+                <tr>
+                <td>Valentineton</td>
+                <td align="right">45</td>
+                <td>Urban</td>
+                </tr>
+                <tr>
+                <td>South Phillip</td>
+                <td align="right">38</td>
+                <td>Urban</td>
+                </tr>
+                <tr>
+                <td>North Jason</td>
+                <td align="right">6</td>
+                <td>Urban</td>
+                </tr>
+                <tr>
+                <td>Deanville</td>
+                <td align="right">49</td>
+                <td>Urban</td>
+                </tr>
+                <tr>
+                <td>Lake Jonathanshire</td>
+                <td align="right">5</td>
+                <td>Urban</td>
+                </tr>
+                <tr>
+                <td>New Paulton</td>
+                <td align="right">44</td>
+                <td>Urban</td>
+                </tr>
+                <tr>
+                <td>Hurleymouth</td>
+                <td align="right">36</td>
+                <td>Urban</td>
+                </tr>
+                <tr>
+                <td>Port Johnbury</td>
+                <td align="right">3</td>
+                <td>Urban</td>
+                </tr>
+                <tr>
+                <td>North Jasmine</td>
+                <td align="right">33</td>
+                <td>Urban</td>
+                </tr>
+                <tr>
+                <td>New Paulville</td>
+                <td align="right">44</td>
+                <td>Urban</td>
+                </tr>
+                <tr>
+                <td>Amandaburgh</td>
+                <td align="right">12</td>
+                <td>Urban</td>
+                </tr>
+                <tr>
+                <td>Williamsview</td>
+                <td align="right">46</td>
+                <td>Urban</td>
+                </tr>
+                <tr>
+                <td>New Jacobville</td>
+                <td align="right">50</td>
+                <td>Urban</td>
+                </tr>
+                <tr>
+                <td>Port Samanthamouth</td>
+                <td align="right">57</td>
+                <td>Urban</td>
+                </tr>
+                <tr>
+                <td>Roberthaven</td>
+                <td align="right">47</td>
+                <td>Urban</td>
+                </tr>
+                <tr>
+                <td>Port Shane</td>
+                <td align="right">7</td>
+                <td>Suburban</td>
+                </tr>
+                <tr>
+                <td>Lake Ann</td>
+                <td align="right">3</td>
+                <td>Suburban</td>
+                </tr>
+                <tr>
+                <td>Lake Scott</td>
+                <td align="right">23</td>
+                <td>Suburban</td>
+                </tr>
+                <tr>
+                <td>Colemanland</td>
+                <td align="right">23</td>
+                <td>Suburban</td>
+                </tr>
+                <tr>
+                <td>New Raymond</td>
+                <td align="right">17</td>
+                <td>Suburban</td>
+                </tr>
+                <tr>
+                <td>South Teresa</td>
+                <td align="right">21</td>
+                <td>Suburban</td>
+                </tr>
+                <tr>
+                <td>Myersshire</td>
+                <td align="right">19</td>
+                <td>Suburban</td>
+                </tr>
+                <tr>
+                <td>Grayville</td>
+                <td align="right">2</td>
+                <td>Suburban</td>
+                </tr>
+                <tr>
+                <td>Lake Robertside</td>
+                <td align="right">4</td>
+                <td>Suburban</td>
+                </tr>
+                <tr>
+                <td>Lewishaven</td>
+                <td align="right">23</td>
+                <td>Suburban</td>
+                </tr>
+                <tr>
+                <td>Rodriguezview</td>
+                <td align="right">20</td>
+                <td>Suburban</td>
+                </tr>
+                <tr>
+                <td>Victoriaport</td>
+                <td align="right">16</td>
+                <td>Suburban</td>
+                </tr>
+                <tr>
+                <td>Williamsonville</td>
+                <td align="right">2</td>
+                <td>Suburban</td>
+                </tr>
+                <tr>
+                <td>West Hannah</td>
+                <td align="right">12</td>
+                <td>Suburban</td>
+                </tr>
+                <tr>
+                <td>West Kimmouth</td>
+                <td align="right">4</td>
+                <td>Suburban</td>
+                </tr>
+                <tr>
+                <td>New Shannonberg</td>
+                <td align="right">20</td>
+                <td>Suburban</td>
+                </tr>
+                <tr>
+                <td>North Timothy</td>
+                <td align="right">7</td>
+                <td>Suburban</td>
+                </tr>
+                <tr>
+                <td>New Olivia</td>
+                <td align="right">20</td>
+                <td>Suburban</td>
+                </tr>
+                <tr>
+                <td>Lake Omar</td>
+                <td align="right">22</td>
+                <td>Suburban</td>
+                </tr>
+                <tr>
+                <td>Sotoville</td>
+                <td align="right">10</td>
+                <td>Suburban</td>
+                </tr>
+                <tr>
+                <td>Veronicaberg</td>
+                <td align="right">20</td>
+                <td>Suburban</td>
+                </tr>
+                <tr>
+                <td>East Kentstad</td>
+                <td align="right">20</td>
+                <td>Suburban</td>
+                </tr>
+                <tr>
+                <td>Bethanyland</td>
+                <td align="right">22</td>
+                <td>Suburban</td>
+                </tr>
+                <tr>
+                <td>South Brenda</td>
+                <td align="right">1</td>
+                <td>Suburban</td>
+                </tr>
+                <tr>
+                <td>Barronchester</td>
+                <td align="right">11</td>
+                <td>Suburban</td>
+                </tr>
+                <tr>
+                <td>Brandonfort</td>
+                <td align="right">10</td>
+                <td>Suburban</td>
+                </tr>
+                <tr>
+                <td>East Danielview</td>
+                <td align="right">22</td>
+                <td>Suburban</td>
+                </tr>
+                <tr>
+                <td>East Marymouth</td>
+                <td align="right">5</td>
+                <td>Suburban</td>
+                </tr>
+                <tr>
+                <td>Mezachester</td>
+                <td align="right">14</td>
+                <td>Suburban</td>
+                </tr>
+                <tr>
+                <td>Lewisland</td>
+                <td align="right">4</td>
+                <td>Suburban</td>
+                </tr>
+                <tr>
+                <td>Josephside</td>
+                <td align="right">25</td>
+                <td>Suburban</td>
+                </tr>
+                <tr>
+                <td>Davidfurt</td>
+                <td align="right">23</td>
+                <td>Suburban</td>
+                </tr>
+                <tr>
+                <td>Nicolechester</td>
+                <td align="right">19</td>
+                <td>Suburban</td>
+                </tr>
+                <tr>
+                <td>East Aaronbury</td>
+                <td align="right">7</td>
+                <td>Suburban</td>
+                </tr>
+                <tr>
+                <td>North Richardhaven</td>
+                <td align="right">1</td>
+                <td>Suburban</td>
+                </tr>
+                <tr>
+                <td>North Jeffrey</td>
+                <td align="right">11</td>
+                <td>Suburban</td>
+                </tr>
+                <tr>
+                <td>South Jennifer</td>
+                <td align="right">7</td>
+                <td>Rural</td>
+                </tr>
+                <tr>
+                <td>West Heather</td>
+                <td align="right">4</td>
+                <td>Rural</td>
+                </tr>
+                <tr>
+                <td>Newtonview</td>
+                <td align="right">1</td>
+                <td>Rural</td>
+                </tr>
+                <tr>
+                <td>North Holly</td>
+                <td align="right">8</td>
+                <td>Rural</td>
+                </tr>
+                <tr>
+                <td>Michaelberg</td>
+                <td align="right">6</td>
+                <td>Rural</td>
+                </tr>
+                <tr>
+                <td>Taylorhaven</td>
+                <td align="right">1</td>
+                <td>Rural</td>
+                </tr>
+                <tr>
+                <td>Penaborough</td>
+                <td align="right">6</td>
+                <td>Rural</td>
+                </tr>
+                <tr>
+                <td>Harringtonfort</td>
+                <td align="right">4</td>
+                <td>Rural</td>
+                </tr>
+                <tr>
+                <td>Lake Jamie</td>
+                <td align="right">4</td>
+                <td>Rural</td>
+                </tr>
+                <tr>
+                <td>Lake Latoyabury</td>
+                <td align="right">2</td>
+                <td>Rural</td>
+                </tr>
+                <tr>
+                <td>North Jaime</td>
+                <td align="right">1</td>
+                <td>Rural</td>
+                </tr>
+                <tr>
+                <td>South Marychester</td>
+                <td align="right">1</td>
+                <td>Rural</td>
+                </tr>
+                <tr>
+                <td>Garzaport</td>
+                <td align="right">7</td>
+                <td>Rural</td>
+                </tr>
+                <tr>
+                <td>Bradshawfurt</td>
+                <td align="right">7</td>
+                <td>Rural</td>
+                </tr>
+                <tr>
+                <td>New Ryantown</td>
+                <td align="right">2</td>
+                <td>Rural</td>
+                </tr>
+                <tr>
+                <td>Randallchester</td>
+                <td align="right">9</td>
+                <td>Rural</td>
+                </tr>
+                <tr>
+                <td>Jessicaport</td>
+                <td align="right">1</td>
+                <td>Rural</td>
+                </tr>
+                <tr>
+                <td>South Saramouth</td>
+                <td align="right">7</td>
+                <td>Rural</td>
+                </tr>
+                </tbody></table>
+</body>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+              
+</html>

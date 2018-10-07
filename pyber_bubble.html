@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Pyber Data Bubble Plot</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-default">
+    <ul class="nav navbar-nav">
+        <li id="home-icon"><a href="Landing.html"><span class="glyphicon glyphicon-dashboard"></span> Pyber</a></li>
+    </ul>
+      <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+            <li><a href="pyber_bubble.html">Pyber Data Bubble Plot</a></li>
+            <li><a href="fares_city.html">Fares - City Type</a></li>
+            <li><a href="rides_city.html">Rides - City Type</a></li>
+            <li><a href="drivers_city.html">Drivers - City Type</a></li>
+        </ul>
+      </li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Data<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="data.html">Ride Data</a></li>
+          <li><a href="data2.html">City Data</a></li>
+        </ul>  
+      <li><a href="comparison.html">Comparison</a></li>
+    </ul>
+</nav>
+
+<div class="container-fluid">
+  <div class="row">
+        <div class="col-sm-12 col-md-7">
+      <div class="card">
+        <div class="card-header">
+          <h1>Average Fare vs Total Rides vs City Type</h1>
+        <br>     
+        </div>
+        <div class="card-body">
+          <img class="img-fluid float-left" src="Images/Pyber_Ride_Sharing_Data_2016.png" alt="pyber_data">
+          <p>The bubble plot displayed above showcases the relationship between the average fare ($) per city, total number of rides per city, total number of drivers per city, as well as city type (urban, suburban, and rural.</p>
+          <p>The Y axis represents the average fare cost in USD, while the X axis represents the total number of rides in each city. The size of each individual plot is relative to the number of drivers in the particular city represented. The larger the individual plot, the more drivers in that city.</p>
+          <br>
+            <p>The color of each individual plot represents the city type:
+              <ul>
+                  <li>Urban - Coral</li>
+                  <li>Suburban - Light Blue</li>
+                  <li>Rural - Gold</li>
+              </ul>
+          </p>
+            <br>
+          <p>Below are some trends that were observed based on the data in the plot:
+              <ul>
+                  <li>There are significantly more drivers in Urban cities than both Suburban and Urban</li>
+                  <li>There were more rides in Urban cities than any other type, however the average fares were the lowest</li>
+                  <li>There were less rides in Rural cities than any other type, however the average fares were the highest</li>
+              </ul>
+          </p>
+          </div>
+        </div>
+      </div>    
+      <div class="col-sm-12 col-md-5">
+        <div class="card">
+          <div class="card-header">
+            <h2>Visualizations</h2>
+            <br>
+          </div>
+            <div class="card-body">
+              <div class="row">
+                  <div class="col-sm-12 col-6">
+                      <a href="pyber_bubble.html"><img src="Images/Pyber_Ride_Sharing_Data_2016.png" alt="pyber_data"></a>
+                      <a href="fares_city.html"><img src="Images/Total_Fares_City_Type.png" alt="fares_city"></a>
+                      <a href="rides_city.html"><img src="Images/Total_Rides_City_Type.png" alt="rides_city"></a>
+                      <a href="drivers_city.html"><img src="Images/Total_Drivers_City_Type.png" alt="drivers_city"></a>
+                   </div>   
+                  </div>    
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</html>
